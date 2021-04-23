@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import logo from '../logo.png';
 import './css/header.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom"; 
 class Header extends Component {
     render() {
         return (
@@ -13,11 +19,11 @@ class Header extends Component {
                   <ul className="menu_header">
                     <li className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                       <i className="fas fa-home" />
-                      <a href>Trang chủ</a>
+                      <Link to='/'>Trang chủ</Link>
                     </li>
                     <li className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                       <i className="fas fa-user-circle" />
-                      <a href>Tài khoản</a>
+                      <a >Tài khoản</a>
                     </li>
                   </ul>
                 </div>
@@ -38,7 +44,7 @@ class Header extends Component {
                     <ul className="menu_header">
                       <li className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                         <i className="far fa-user-circle" />
-                        <a href>Đăng nhập</a>
+                        <Link to='/login'>Đăng nhập</Link>
                       </li>
                       <li className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                         <button id="btn_upload" type="button" className="btn btn-default">

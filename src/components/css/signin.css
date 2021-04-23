@@ -1,0 +1,53 @@
+/* .main_signin{
+    background-image: url('../img/desktop_background_signin.jpg');
+} */
+.welcome h4{
+    color: #FFBA00;
+}
+.form_signin{
+    width: 40%;
+    background-color: #fff;
+    margin: 2% auto;
+    box-shadow: 0px 2px 10px 1px #bdbbbb;
+}
+.signin_title{
+    display: flex;
+    padding: 5px;
+    padding-top: 15%;
+} 
+.form_group{
+    padding: 1% 5%;
+}
+.form_group .input{
+    padding-top: 5%;
+}
+.form_group .btn{
+    margin-top: 5%;
+    width: 100%;
+    font-weight: bold;
+}
+.other_signin{
+    text-align: center;
+    padding-bottom: 15%;
+}
+.other_signin p{
+    font-size: 14px;
+    max-width: 300px;
+    text-align: center;
+    margin: auto;
+}
+.other_login_method{
+    padding-top: 7%;
+    padding-bottom: 5%;
+}
+.social_list{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    padding-bottom: 5%;
+}
+.social_item_signin{
+    list-style: none;
+    text-align: center;
+}

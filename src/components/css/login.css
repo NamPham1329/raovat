@@ -1,0 +1,50 @@
+/* .main_login{
+    background-image: url('../img/desktop_background_login.jpg');
+} */
+.welcome h4{
+    color: #FFBA00;
+}
+.form_login{
+    width: 40%;
+    background-color: #fff;
+    margin: 2% auto;
+    box-shadow: 0px 2px 10px 1px #bdbbbb;
+}
+.login_title{
+    display: flex;
+    padding: 5px;
+    padding-top: 15%;
+} 
+.form_group{
+    padding: 1% 5%;
+}
+.form_group .input{
+    padding-top: 5%;
+}
+.form_group .btn{
+    margin-top: 5%;
+    width: 100%;
+    font-weight: bold;
+}
+.other_login{
+    text-align: center;
+    padding-bottom: 12%;
+}
+.other_login p{
+    font-size: 14px;
+    max-width: 300px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 7%;
+}
+.social_list{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    padding-bottom: 5%;
+}
+.social_item_login{
+    list-style: none;
+    text-align: center;
+}
