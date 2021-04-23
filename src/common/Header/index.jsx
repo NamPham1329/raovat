@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../logo.png';
-import './css/header.css';
+import logo from './logo.png';
+import './style.css';
 import {
   BrowserRouter as Router,
   Switch,
