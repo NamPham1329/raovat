@@ -1,16 +1,19 @@
-/* .main_login{
-    background-image: url('../img/desktop_background_login.jpg');
-} */
+.main_signin{
+    background-image: url('./images/bg_login.jpg');
+    background-size: 70% auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
 .welcome h4{
     color: #FFBA00;
 }
-.form_login{
+.form_signin{
     width: 40%;
     background-color: #fff;
     margin: 2% auto;
     box-shadow: 0px 2px 10px 1px #bdbbbb;
 }
-.login_title{
+.signin_title{
     display: flex;
     padding: 5px;
     padding-top: 15%;
@@ -26,16 +29,19 @@
     width: 100%;
     font-weight: bold;
 }
-.other_login{
+.other_signin{
     text-align: center;
-    padding-bottom: 12%;
+    padding-bottom: 15%;
 }
-.other_login p{
+.other_signin p{
     font-size: 14px;
     max-width: 300px;
     text-align: center;
     margin: auto;
-    padding-bottom: 7%;
+}
+.other_login_method{
+    padding-top: 7%;
+    padding-bottom: 5%;
 }
 .social_list{
     display: flex;
@@ -44,7 +50,7 @@
     padding: 0;
     padding-bottom: 5%;
 }
-.social_item_login{
+.social_item_signin{
     list-style: none;
     text-align: center;
 }

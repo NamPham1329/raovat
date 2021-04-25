@@ -12,9 +12,6 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.main{
-  background-image: url('img/bg-image.jpg');
-}
 .App-link {
   color: #61dafb;
 }
@@ -33,4 +30,11 @@
 .container{
   width: 70%;
 }
-
+#content{
+  background-color: #fff;
+}
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
