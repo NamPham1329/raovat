@@ -1,7 +1,25 @@
 import React, { Component } from 'react';
+import axios from 'axios';
+
 
 class List extends Component {
+    state = {
+        products: [],
+        error: null,
+        isLoading :true
+      };
+      componentDidMount = async () => {
+        try {
+          const response = await axios.get('http://localhost:1337/products');
+          this.setState({ products: response.data });
+        } catch (error) {
+          this.setState({ error });
+        }
+      };
     render() {
+        console.log(
+            this.state.products
+          )
         return (
             <div className="main_listview">
                 <div className="container">
@@ -10,25 +28,28 @@ class List extends Component {
                     </div>
                     <div className="list_view">
                             <ul className="list_product">
-                            <li className="product_item">
+                            {this.state.products.map(product => (
+                                <li key={product.id} className="product_item">
                                 <div className="image_product">
-                                    <img src="../img/cho tặng.png"/>
+                                <div>
+                                    
+                                </div>
                                 </div>
                                 <div className="product_content">
                                 <div className="wrapper_header">
                                     <div className="name_product">
-                                    Chim mồi
+                                        {product.product_name}
                                     </div>
                                     <div className="price">
-                                    400.000 đ
+                                        {product.product_price}
                                     </div>
                                 </div>
                                 <div className="wrapper_footer">
                                     <div className="time_add">
                                     <i className="fas fa-briefcase" />
                                     <p>Bán chuyên</p>
-                                    <p className="time">20 phút trước</p>
-                                    <p className="address">Huyện Phong Điền</p>
+                                    <p className="time">{product.date_time}</p>
+                                    <p className="address">{product.address}</p>
                                     </div>
                                     <div className="review">
                                         <i className="far fa-heart" />
@@ -36,6 +57,7 @@ class List extends Component {
                                 </div>
                                 </div>
                             </li>
+                            ))}
                         </ul>
                     </div>
                 </div>

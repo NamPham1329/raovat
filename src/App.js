@@ -6,16 +6,14 @@ import Home from './components/Home';
 import Login from './components/Login';
 import Signin from './components/Signin/';
 import List from './components/List/';
-import axios from 'axios';
-
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom"; 
-import Category from './components/Category';
 
+
+
+import Category from './components/Category.js';
 class App extends Component {
   render() {
     return (

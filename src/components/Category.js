@@ -1,10 +1,33 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 class Category extends Component {
+  state = {
+    products: [],
+    error: null,
+    isLoading :true
+  };
+  componentDidMount = async () => {
+    try {
+      const response = await axios.get('http://localhost:1337/products');
+      this.setState({ products: response.data });
+    } catch (error) {
+      this.setState({ error });
+    }
+  };
     render() {
+      console.log(
+        this.state.products
+      )
         return (
+          
           <div className="category">
-            <div className="category_title">
+            <ul>
+              {this.state.products.map(product => (
+                <li key={product.product_id}>{product.product_price}</li>
+              ))}
+            </ul>
+            {/* <div className="category_title">
               <h3>
                 Khám phá danh mục
               </h3>
@@ -146,7 +169,7 @@ class Category extends Component {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         );
     }
